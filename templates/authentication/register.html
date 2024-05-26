@@ -2,10 +2,40 @@
 
 {% block content %}
 
-<div class="card">
- <div class="card-body"> 
-  <h1>Register<h1>
- </div>
-</div>
+<div class="row">
+    <div class="col-md-4">
 
+    </div>
+    <div class="col-md-4">
+        <div class="card mt-6">
+            <div class="card-title">
+                <h4>Register Your Account</h4>
+            </div>
+            <div class="card-body">
+
+                <form action="" method="post">
+                    <div class="form-group">
+                        <input type="text" name="username" class="form-control form-control-sm" id="usernameField"
+                            placeholder="Username">
+                    </div>
+                     <br>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control form-control-sm" id="emailField"
+                            placeholder="Email">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="password" name="password" class="form-control form-control-sm" id="passwordField"
+                            placeholder="Password">
+                        <small class="float-right">Show</small>
+                    </div>
+                    <input type="submit" value="Register" class="btn btn-block">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+
+    </div>
+</div>
 {% endblock content %}
